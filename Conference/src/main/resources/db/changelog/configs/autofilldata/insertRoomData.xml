@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet  author="ainur"  id="8">
+        <insert tableName="room">
+            <column  name="number"  value="11-800"/>
+        </insert>
+        <insert tableName="room">
+            <column  name="number"  value="11-801"/>
+        </insert>
+        <insert tableName="room">
+            <column  name="number"  value="11-802"/>
+        </insert>
+        <insert tableName="room">
+            <column  name="number"  value="11-803"/>
+        </insert>
+        <insert tableName="room">
+            <column  name="number"  value="11-804"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

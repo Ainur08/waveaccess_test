@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    image: conference:0.1
+    hostname: localhost
+    container_name: app
+    ports:
+      - 80:8080

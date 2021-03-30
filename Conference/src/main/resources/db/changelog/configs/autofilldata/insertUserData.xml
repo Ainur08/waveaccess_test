@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <changeSet  author="ainur"  id="9">
+        <insert tableName="user">
+            <column  name="name"  value="Ainur"/>
+            <column  name="token"  value="123"/>
+            <column  name="email"  value="admin@gmail.ru"/>
+            <column  name="hash_password"  value="$2a$10$9XPMJJ4W02JYGlU0RCdI/eFeEOIbIdHNahJIRICEaLB4IlTiA3Vgy"/>
+            <column  name="role"  value="ADMIN"/>
+            <column  name="state"  value="CONFIRMED"/>
+        </insert>
+        <insert tableName="user">
+            <column  name="name"  value="Bulat"/>
+            <column  name="token"  value="123456"/>
+            <column  name="email"  value="bulat@gmail.ru"/>
+            <column  name="hash_password"  value="$2a$10$wywMVXn4HtmOuqcO2NK.BuVbG.6e5BA.HzhGDa8sfKMm7NGO5Cf1m"/>
+            <column  name="role"  value="PRESENTER"/>
+            <column  name="state"  value="CONFIRMED"/>
+        </insert>
+        <insert tableName="user">
+            <column  name="name"  value="Ilnaz"/>
+            <column  name="token"  value="123456789"/>
+            <column  name="email"  value="ilnaz@gmail.ru"/>
+            <column  name="hash_password"  value="$2a$10$AHv7N8wgcviQ4dPoDveyT.Ng6kUV9Mlonx2hxiYIcELD..0wTTeQ2"/>
+            <column  name="role"  value="LISTENER"/>
+            <column  name="state"  value="CONFIRMED"/>
+        </insert>
+        <insert tableName="user">
+            <column  name="name"  value="Radik"/>
+            <column  name="token"  value="123456789"/>
+            <column  name="email"  value="radik@gmail.ru"/>
+            <column  name="hash_password"  value="$2a$10$GDau6E13pT7Gaw1hpT2z8ejMM6hGmZxmyE0F6.hZvprr.m8nN6Pd6"/>
+            <column  name="role"  value="LISTENER"/>
+            <column  name="state"  value="CONFIRMED"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
