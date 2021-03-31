@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "de652651-a8ef-4894-a599-9e1057741d44",
+		"name": "Conference",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "main_page",
+			"item": [
+				{
+					"name": "get_main_page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/main",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "confirmation_email",
+			"item": [
+				{
+					"name": "confirmation_email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost/confirm/{token}",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sign_in_page",
+			"item": [
+				{
+					"name": "get_sign_in_page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/signIn",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign_in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"ainur@gmail.com\",\n    \"password\":\"123\",\n}"
+						},
+						"url": {
+							"raw": "http://localhost/signIn",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "sign_up_page",
+			"item": [
+				{
+					"name": "get_sign_up_page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/signUp",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign_up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\":\"Ainur\",\n     \"email\":\"ainur@gmail.com\",\n    \"password\":\"123\",\n}"
+						},
+						"url": {
+							"raw": "http://localhost/signUp",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "presentation_page",
+			"item": [
+				{
+					"name": "get_presentation_page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/presentation",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_presentation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Java\",\n}"
+						},
+						"url": {
+							"raw": "http://localhost/presentation",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_name_presentation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Javaaaaaaa\",\n}"
+						},
+						"url": {
+							"raw": "http://localhost/presentation/update/{presentationId}",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_schedule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"presentationId\":\"1\",\n    \"roomNumber\":\"11-800\",\n    \"startTime\":\"2009-06-04 18:13:56\",\n    \"endTime\":\"2009-06-04 19:13:56\",\n}"
+						},
+						"url": {
+							"raw": "http://localhost/presentation/schedule",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin_page",
+			"item": [
+				{
+					"name": "get_admin_page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/admin",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "make_presenter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/admin/role/{id}",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user_delete",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/admin/delete/{id}",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_name_and_email_user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Bulat\",\n    \"email\":\"ainur@gmail.com\",\n}"
+						},
+						"url": {
+							"raw": "http://localhost/admin/update/{id}",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rest",
+			"item": [
+				{
+					"name": "get_schedule_list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api/schedule/room/{id}",
+							"protocol": "http"
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
