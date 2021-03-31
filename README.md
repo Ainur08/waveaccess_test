@@ -1,2 +1,2 @@
 Front отсутствует </br>
-Postman тут будет ссылка, если сделаю
+Postman (коллекция запросов) в файле Conference.postman_collection.json
